@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class AnimalTest{
     public static void main(String[] args) {
-        Animal hAnimal = new Human();
+        Human hAnimal = new Human();
         Animal tAnimal = new Tiger();
         Animal eAnimal = new Eagle();
 
@@ -19,15 +19,16 @@ public class AnimalTest{
         animalArrayList.add(eAnimal);
         for(Animal animal : animalArrayList){
             animal.move();
+            hAnimal.readBook();
         }
 
     }
-    public void moveAnimal(Animal animal){
-        animal.move();
-    }
-    public void eating(){
-
-    }
+//    public void moveAnimal(Animal animal){
+//        animal.move();
+//    }
+//    public void eating(){
+//
+//    }
 }
 class Animal {
     public void move(){
