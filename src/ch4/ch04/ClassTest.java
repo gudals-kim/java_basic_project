@@ -14,7 +14,7 @@ public class ClassTest {
         System.out.println(person2);
 
         Class[] parameterTypes = {String.class};
-        c2.getConstructor(parameterTypes);
+
 
 
 
