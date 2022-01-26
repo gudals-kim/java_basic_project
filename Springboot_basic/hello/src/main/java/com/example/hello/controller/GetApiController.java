@@ -16,7 +16,7 @@ public class GetApiController {
         return "get Hello";
     }
 
-    @RequestMapping(path = "/hi", method = RequestMethod.GET) //get으로 http://localhost:8080/api/get/hi 예전에 사용하는 거
+    @RequestMapping(path = "/hi", method = RequestMethod.GET) //get으로 http://localhost:8080/api/get/hi 예전 문법 방식
     public String hi(){
         return "hi";
     }

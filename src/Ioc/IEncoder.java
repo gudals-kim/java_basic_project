@@ -1,0 +1,5 @@
+package Ioc;
+
+public interface IEncoder {
+    String encode(String message);
+}
