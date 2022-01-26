@@ -1,0 +1,16 @@
+{
+  "name":"Hong",
+  "age":24,
+  "cars":[
+    {
+      "name":"k5",
+      "car_number":"1111",
+      "TYPE":"sedan"
+    },
+    {
+      "name":"X5",
+      "car_number":"2222",
+      "TYPE":"SUV"
+    }
+  ]
+}
