@@ -1,4 +1,7 @@
+<%--jsp 문서라는 뜻이다.--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
 <html>
 <head>
     <title>Title</title>

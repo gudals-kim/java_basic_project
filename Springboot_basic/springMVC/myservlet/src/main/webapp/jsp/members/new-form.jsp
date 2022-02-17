@@ -1,4 +1,6 @@
+<%--JSP 문서라고 알려주는 명령어--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Title</title>

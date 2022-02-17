@@ -24,7 +24,7 @@ public class MemberSaveServlet extends HttpServlet {
         String username = request.getParameter("username");
         int age = Integer.parseInt(request.getParameter("age"));
 
-        //멤버를 생성해준다.
+        //가져온 값으로 멤버를 생성해준다.
         Member member = new Member(username, age);
         //멤버를 저장한다.
         memberRepository.save(member);
