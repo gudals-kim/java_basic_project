@@ -19,8 +19,8 @@ public class MvcMemberFormServlet extends HttpServlet {
         dispatcher.forward(request, response);
         //dispatcher.forward 다른 서블릿이나 jsp로 이동할 수 있는 기능이다.
         //서버 내부에서 다시 호출이 발생함.
-        // redirect vs forward
 
+        // redirect vs forward
 //        리다이렉트는 실제 클라이언트(웹 브라우저)에 응답이 나갔다가,
 //        클라이언트가 redirect 경로로 다시 요청한다.
 //        따라서 클라이언트가 인지할 수 있고, URL 경로도 실제로 변경된다.
