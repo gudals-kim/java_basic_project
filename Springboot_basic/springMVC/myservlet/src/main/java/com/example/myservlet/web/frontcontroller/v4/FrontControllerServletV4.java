@@ -22,9 +22,9 @@ public class FrontControllerServletV4 extends HttpServlet {
 
     //프론트 컨트롤러를 생성하면 controllerMap에 각 컨트롤러의 주소와 생성을 매핑한다.
     public FrontControllerServletV4(){
-        controllerMap.put("/front-controller/v3/members/new-form", new MemberFormControllerV4());
-        controllerMap.put("/front-controller/v3/members/save", new MemberSaveControllerV4());
-        controllerMap.put("/front-controller/v3/members", new MemberListControllerV4());
+        controllerMap.put("/front-controller/v4/members/new-form", new MemberFormControllerV4());
+        controllerMap.put("/front-controller/v4/members/save", new MemberSaveControllerV4());
+        controllerMap.put("/front-controller/v4/members", new MemberListControllerV4());
     }
 
     @Override
@@ -33,7 +33,7 @@ public class FrontControllerServletV4 extends HttpServlet {
         String requestURI = request.getRequestURI();
         //그 주소에 맞는 객체를 생성해서 controller에 저장한다.
         ControllerV4 controller = controllerMap.get(requestURI);
-        // 모든 클래스가 ControllerV2 인터페이스의 자식 클래스들이기 때문에 ControllerV2 으로 형변환이 가능하다.
+
 
 
         //만약 주소에 맞는 컨트롤러가 없을시 예외처리
