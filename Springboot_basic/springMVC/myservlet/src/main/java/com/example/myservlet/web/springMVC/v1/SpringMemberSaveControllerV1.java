@@ -20,8 +20,9 @@ public class SpringMemberSaveControllerV1 {
 
         Member member = new Member(username, age); System.out.println("member = " + member);
         memberRepository.save(member);
-
+//        (v1) 스프링에서 제공하는 ModelAndView 객체 생성
         ModelAndView mv = new ModelAndView("save-result");
+//        (v1) ModelAndView에 데이터를 추가할땐 addObject() 을 사용하면 된다.
         mv.addObject("member", member);
         return mv;
     }
