@@ -1,12 +1,13 @@
 package hello.springmvc.basic.requestmapping;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-
+@Slf4j
 @RestController
 public class MappingController {
-    private Logger log = LoggerFactory.getLogger(getClass());
+//    private Logger log = LoggerFactory.getLogger(getClass());
 
     @RequestMapping(value = "/hello-basic", method = RequestMethod.GET)
     public String helloBasic() {
@@ -44,8 +45,8 @@ public class MappingController {
      * @PathVariable("userId") String userId -> @PathVariable userId
      */
     @GetMapping("/mapping/{userId}")
-    public String mappingPath(@PathVariable("userId")String data){
-        log.info("mappingPath userId={}", data);
+    public String mappingPath(@PathVariable String userId){
+        log.info("mappingPath userId={}", userId);
         return "ok";
     }
 
